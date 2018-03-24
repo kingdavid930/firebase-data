@@ -42,33 +42,7 @@
                             <td>5:30pm</td>
                             <td>10</td>
                         </tr>
-                        <tr>
-                            <td>trention express</td>
-                            <td>trention</td>
-                            <td>25</td>
-                            <td>5:30pm</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>trention express</td>
-                            <td>trention</td>
-                            <td>25</td>
-                            <td>5:30pm</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>trention express</td>
-                            <td>trention</td>
-                            <td>25</td>
-                            <td>5:30pm</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>trention express</td>
-                            <td>trention</td>
-                            <td>25</td>
-                            <td>5:30pm</td>
-                            <td>10</td>
+                    
                         </tr>
 
                     </tbody>
@@ -78,14 +52,14 @@
                 <p class="pad1">add train</p>
                 <form action="" class="primary pad2 ">
                     <label for="train-name">train name</label>
-                    <input type="text" class="width-100 mBottom">
+                    <input type="text" class="width-100 mBottom" data-name="name">
                     <label for="destination">destination</label>
-                    <input type="text" class="width-100 mBottom">
+                    <input type="text" class="width-100 mBottom" data-name="destination-place">
                     <label for="first-train-time hh:mm-military time">first train time hh:mm-military time</label>
-                    <input type="text" class="width-100 mBottom">
+                    <input type="text" class="width-100 mBottom" data-name="data-time">
                     <label for="frequency(min)">frequency(min)</label>
-                    <input type="text" class="width-100 mBottom">
-                    <button class="blue radius white">Submit</button>
+                    <input type="text" class="width-100 mBottom" data-name="data-frequency">
+                    <button id="submit-button" class="blue radius white">Submit</button>
                 </form>
 
 
@@ -122,7 +96,12 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="assets/javascript/app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-messaging.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
